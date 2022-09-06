@@ -73,7 +73,7 @@ include "header.php";
                     echo "<div class='page'>";
                     echo "<ul>";
                     if ($page > 1) {
-                        echo "<li><a href='index.php?page=" . ($page - 1) . "'>Prev</li>";
+                        echo "<li><a href='main.php?page=" . ($page - 1) . "'>Prev</li>";
                     }
                     for ($i = 1; $i <= $totalPage; $i++) {
                         if ($i == $page) {
@@ -82,10 +82,10 @@ include "header.php";
                         else {
                             $active = "";
                         }
-                        echo '<li class="'.$active.'"><a href="index.php?page='.$i.'">'.$i.'</a></li>';
+                        echo '<li class="'.$active.'"><a href="main.php?page='.$i.'">'.$i.'</a></li>';
                     }
                     if ($totalPage > $page) {
-                        echo "<li><a href='index.php?page=" . ($page + 1) . "'>Next</a></li>";
+                        echo "<li><a href='main.php?page=" . ($page + 1) . "'>Next</a></li>";
                     }
                     echo "</ul>";
                     echo "</div>";

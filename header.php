@@ -57,7 +57,7 @@ switch ($page) {
     <nav>
         <div class="navbar">
             <div class="logo">
-                <a href="index.php"><img src="logo/logo.png" alt=""></a>
+                <a href="main.php"><img src="logo/logo.png" alt=""></a>
             </div>
             <div class="contact-us">
                 <div class="contact"><i class="far fa-id-card"></i>Contact For Making Website</div>
@@ -77,7 +77,7 @@ switch ($page) {
             $active = "";
         ?>
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="main.php">Home</a></li>
                 <?php
                 while ($row = mysqli_fetch_assoc($result)) {
                     if (isset($_GET['catid'])) {

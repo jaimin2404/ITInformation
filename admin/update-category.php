@@ -3,7 +3,7 @@ include "header.php";
 include "navbar.php";
 if (isset($_POST['save'])) {
     $conn = mysqli_connect("localhost:3307", "root", "", "news");
-
+    
     $catid = mysqli_real_escape_string($conn, $_POST['categoryid']);
     $catname = mysqli_real_escape_string($conn, $_POST['categoryname']);
     $sql1 = "UPDATE category SET categoryName='{$catname}' WHERE categoryId='{$catid}';";

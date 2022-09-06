@@ -16,7 +16,7 @@
 <body>
     <div class="navbar">
         <div class="logo">
-            <a href="../index.php"><img src="logo/logo.png" alt=""></a>
+            <a href="../main.php"><img src="logo/logo.png" alt=""></a>
         </div>
         <div class="admin-logout">
         <p><?php echo $_SESSION['userName']; ?>
