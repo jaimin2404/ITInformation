@@ -22,7 +22,7 @@ include "navbar.php";
                 </div>
             </div>
             <?php
-                $conn = mysqli_connect("localhost:3307","root","","news") or die("Connection Failed");
+                $conn = mysqli_connect("localhost:3308","root","","news") or die("Connection Failed");
                 $limit = 10;
                 if(isset($_GET['page'])){
                     $page = $_GET['page'];

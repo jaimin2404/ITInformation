@@ -66,7 +66,7 @@ switch ($page) {
             </div>
         </div>
         <?php
-        $conn = mysqli_connect("localhost:3307", "root", "", "news") or die("Connection failed");
+        $conn = mysqli_connect("localhost:3308", "root", "", "news") or die("Connection failed");
         if (isset($_GET['catid'])) {
             $catId = $_GET['catid'];
         }

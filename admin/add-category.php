@@ -2,7 +2,7 @@
 include "header.php";
 include "navbar.php";
 if (isset($_POST['save'])) {
-    $conn = mysqli_connect("localhost:3307", "root", "", "news");
+    $conn = mysqli_connect("localhost:3308", "root", "", "news");
     $categoryname = mysqli_real_escape_string($conn, $_POST['catname']);
     $sql1 = "INSERT INTO category (categoryName) VALUES ('{$categoryname}');";
     if (mysqli_query($conn, $sql1)) {

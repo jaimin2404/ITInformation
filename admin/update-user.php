@@ -40,7 +40,7 @@ if(isset($_POST['save'])){
             <h1>Update User</h1>
             <div class="add-form">
                 <?php
-                    $conn = mysqli_connect("localhost:3307","root","","news") or die("Connection Fialed");
+                    $conn = mysqli_connect("localhost:3308","root","","news") or die("Connection Fialed");
                     $user_id = $_GET['id'];
                     $sql = "SELECT * FROM user WHERE userId={$user_id}";
                     $result = mysqli_query($conn,$sql) or die("Query Failed");

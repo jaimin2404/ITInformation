@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost:3307","root","","news");
+$conn = mysqli_connect("localhost:3308","root","","news");
 
 $sql = "UPDATE post SET postCategory={$_POST['post-category']},postTitle='{$_POST['post-title']}',postDescription='{$_POST['post-discription']}' WHERE postId={$_POST['postid']};";
 if($_POST['old-category'] != $_POST['post-category']){

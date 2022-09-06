@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost:3307", "root", "", "news");
+$conn = mysqli_connect("localhost:3308", "root", "", "news");
 session_start();
 if (isset($_SESSION['adminUserName'])) {
     header("Location: http://localhost/PHP/projects/ITInformation/admin/user.php");
@@ -34,7 +34,7 @@ if (isset($_SESSION['adminUserName'])) {
             </form>
             <?php
             if (isset($_POST['login'])) {
-                $conn = mysqli_connect("localhost:3307", "root", "", "news");
+                $conn = mysqli_connect("localhost:3308", "root", "", "news");
                 $username = mysqli_real_escape_string($conn, $_POST['username']);
                 $pass = md5($_POST['password']);
 

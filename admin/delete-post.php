@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost:3307","root","","news");
+    $conn = mysqli_connect("localhost:3308","root","","news");
     $catId = $_GET['catid'];
 
     $sql1 = "SELECT *  FROM category WHERE categoryId = '{$catId}';";

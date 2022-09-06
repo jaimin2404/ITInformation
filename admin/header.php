@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost:3307","root","","news");
+    $conn = mysqli_connect("localhost:3308","root","","news");
     session_start();
     if(!isset($_SESSION["adminUserName"])){
         header("Location: http://localhost/PHP/projects/ITinformation/admin/");

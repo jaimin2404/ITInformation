@@ -17,7 +17,7 @@ include "navbar.php";
             <h1>Update Post</h1>
             <div class="add-form">
                 <?php
-                $conn = mysqli_connect("localhost:3307", "root", "", "news") or die("connection failed");
+                $conn = mysqli_connect("localhost:3308", "root", "", "news") or die("connection failed");
                 $post_id = $_GET['id'];
                 $qry = "SELECT * FROM post LEFT JOIN category ON post.postCategory = category.categoryId left join user on post.postAuthor=user.userId where postId = {$post_id}";
 

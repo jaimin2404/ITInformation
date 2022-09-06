@@ -16,7 +16,7 @@ include "header.php";
         <div class="main-content">
             <div class="container">
                 <?php
-                $conn = mysqli_connect("localhost:3307", "root", "", "news");
+                $conn = mysqli_connect("localhost:3308", "root", "", "news");
                 $limit = 10;
                 if (isset($_GET['page'])) {
                     $page = $_GET['page'];

@@ -25,7 +25,7 @@ include "navbar.php";
                         <select name="post-category">
                             <option disabled>Select Category</option>
                             <?php
-                            $conn = mysqli_connect("localhost:3307", "root", "", "news") or die("Connection failed");
+                            $conn = mysqli_connect("localhost:3308", "root", "", "news") or die("Connection failed");
 
                             $qry = "SELECT * FROM category";
                             $result = mysqli_query($conn, $qry) or die("Query Failed");

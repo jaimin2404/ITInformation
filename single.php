@@ -14,7 +14,7 @@ include "header.php";
     <div class="main index">
         <div class="main-content">
             <?php
-            $conn = mysqli_connect("localhost:3307", "root", "", "news") or die("Query failed");
+            $conn = mysqli_connect("localhost:3308", "root", "", "news") or die("Query failed");
             $pid = $_GET['id'];
             $sql = "SELECT post.postId,post.postTitle,post.postDescription,post.postDate,post.postImage,post.postAuthor,category.categoryName,category.categoryId,user.userName,user.name FROM post LEFT JOIN category ON post.postCategory = category.categoryId LEFT JOIN user ON post.postAuthor = user.userId WHERE postId = {$pid}";
             $result = mysqli_query($conn, $sql) or die("query failed");

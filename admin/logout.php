@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("localhost:3307","root","","news") or die("Connection Failed");
+    $conn = mysqli_connect("localhost:3308","root","","news") or die("Connection Failed");
 
     session_start();
     session_unset();

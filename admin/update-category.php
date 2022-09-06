@@ -2,7 +2,7 @@
 include "header.php";
 include "navbar.php";
 if (isset($_POST['save'])) {
-    $conn = mysqli_connect("localhost:3307", "root", "", "news");
+    $conn = mysqli_connect("localhost:3308", "root", "", "news");
     
     $catid = mysqli_real_escape_string($conn, $_POST['categoryid']);
     $catname = mysqli_real_escape_string($conn, $_POST['categoryname']);
@@ -29,7 +29,7 @@ if (isset($_POST['save'])) {
             <h1>Update Category</h1>
             <div class="add-form">
                 <?php
-                $conn = mysqli_connect("localhost:3307", "root", "", "news") or die("Connection Fialed");
+                $conn = mysqli_connect("localhost:3308", "root", "", "news") or die("Connection Fialed");
                 $cat_id = $_GET['id'];
                 $sql = "SELECT * FROM category WHERE categoryId={$cat_id}";
                 $result = mysqli_query($conn, $sql) or die("Query Failed");

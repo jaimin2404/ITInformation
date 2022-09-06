@@ -3,7 +3,7 @@ include "header.php";
 include "navbar.php";
 
 if (isset($_POST['save'])) {
-    $conn = mysqli_connect("localhost:3307", "root", "", "news") or die("connection Failed...");
+    $conn = mysqli_connect("localhost:3308", "root", "", "news") or die("connection Failed...");
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $birthdate = mysqli_real_escape_string($conn, $_POST['birthdate']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);

@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost:3307","root","","news");
+$conn = mysqli_connect("localhost:3308","root","","news");
 
 if(isset($_FILES['post-image'])){
     $error = array();

@@ -18,7 +18,7 @@
             Recent Post
         </div>
         <?php
-        $conn = mysqli_connect("localhost:3307", "root", "", "news");
+        $conn = mysqli_connect("localhost:3308", "root", "", "news");
         $limit = 5;
         $sql = "SELECT post.postId,post.postTitle,post.postDescription,post.postDate,post.postImage,post.postAuthor,user.userId,category.categoryId,category.categoryName,user.userName,user.name FROM post LEFT JOIN category ON post.postCategory = category.categoryId LEFT JOIN user ON post.postAuthor = user.userId ORDER BY post.postId DESC LIMIT {$limit}";
 
