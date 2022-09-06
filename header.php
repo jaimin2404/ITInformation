@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost:3307", "root", "", "news") or die("COnnection failed");
+$conn = mysqli_connect("localhost:3308", "root", "", "news") or die("COnnection failed");
 $page = basename($_SERVER['PHP_SELF']);
 switch ($page) {
     case "single.php":
